@@ -1,0 +1,1717 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #3399ff; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #3399ff; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #3399ff; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #3399ff; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #3399ff; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #3399ff; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #3399ff; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #3399ff; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #3399ff; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #3399ff; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #3399ff; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #3399ff; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #3399ff; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.sf3b2i {color: #ababab; background-color: #ffffff; }
+.sf3b5i {color: #2367ab; background-color: #3399ff; }
+.sf3b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf3b16i {color: #a19774; background-color: #f1e2ad; }
+.sf3b18i {color: #ab7257; background-color: #ffaa82; }
+.sf3b19i {color: #865749; background-color: #c8816c; }
+.sf6b2i {color: #ffffff; background-color: #ffffff; }
+.sf6b5i {color: #76baff; background-color: #3399ff; }
+.sf6b14i {color: #ffbfbf; background-color: #ffa0a0; }
+.sf6b16i {color: #f5ebc8; background-color: #f1e2ad; }
+.sf6b18i {color: #ffc6ab; background-color: #ffaa82; }
+.sf6b19i {color: #daaa9c; background-color: #c8816c; }
+.sf7b2i {color: #ababff; background-color: #ffffff; font-weight: bold; }
+.sf7b5i {color: #2367ff; background-color: #3399ff; font-weight: bold; }
+.sf7b14i {color: #ab6bbf; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16i {color: #a197c8; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18i {color: #ab72ab; background-color: #ffaa82; font-weight: bold; }
+.sf7b19i {color: #86579c; background-color: #c8816c; font-weight: bold; }
+.sf8b2i {color: #d5abd5; background-color: #ffffff; }
+.sf8b5i {color: #4c67d5; background-color: #3399ff; }
+.sf8b14i {color: #d56b96; background-color: #ffa0a0; }
+.sf8b16i {color: #cc979f; background-color: #f1e2ad; }
+.sf8b18i {color: #d57282; background-color: #ffaa82; }
+.sf8b19i {color: #b15772; background-color: #c8816c; }
+.sf9b2i {color: #abd5ab; background-color: #ffffff; }
+.sf9b5i {color: #2391ab; background-color: #3399ff; }
+.sf9b14i {color: #ab966b; background-color: #ffa0a0; }
+.sf9b16i {color: #a1c274; background-color: #f1e2ad; }
+.sf9b18i {color: #ab9d57; background-color: #ffaa82; }
+.sf9b19i {color: #868149; background-color: #c8816c; }
+.sf10b2i {color: #ffabab; background-color: #ffffff; }
+.sf10b5i {color: #7667ab; background-color: #3399ff; }
+.sf10b14i {color: #ff6b6b; background-color: #ffa0a0; }
+.sf10b16i {color: #f59774; background-color: #f1e2ad; }
+.sf10b18i {color: #ff7257; background-color: #ffaa82; }
+.sf10b19i {color: #da5749; background-color: #c8816c; }
+.sf11b2i {color: #cbcbcb; background-color: #ffffff; }
+.sf11b5i {color: #4187cb; background-color: #3399ff; }
+.sf11b14i {color: #cb8b8b; background-color: #ffa0a0; }
+.sf11b16i {color: #c1b794; background-color: #f1e2ad; }
+.sf11b18i {color: #cb9277; background-color: #ffaa82; }
+.sf11b19i {color: #a67769; background-color: #c8816c; }
+.sf12b2i {color: #d5abab; background-color: #ffffff; }
+.sf12b5i {color: #4c67ab; background-color: #3399ff; }
+.sf12b14i {color: #d56b6b; background-color: #ffa0a0; }
+.sf12b16i {color: #cc9774; background-color: #f1e2ad; }
+.sf12b18i {color: #d57257; background-color: #ffaa82; }
+.sf12b19i {color: #b15749; background-color: #c8816c; }
+.sf13b2i {color: #abd5eb; background-color: #ffffff; }
+.sf13b5i {color: #2391eb; background-color: #3399ff; }
+.sf13b14i {color: #ab96aa; background-color: #ffa0a0; }
+.sf13b16i {color: #a1c2b3; background-color: #f1e2ad; }
+.sf13b18i {color: #ab9d96; background-color: #ffaa82; }
+.sf13b19i {color: #868187; background-color: #c8816c; }
+.sf15b2i {color: #ababab; background-color: #ffffff; }
+.sf15b5i {color: #2367ab; background-color: #3399ff; }
+.sf15b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf15b16i {color: #a19774; background-color: #f1e2ad; }
+.sf15b18i {color: #ab7257; background-color: #ffaa82; }
+.sf15b19i {color: #865749; background-color: #c8816c; }
+.sf17b2i {color: #ababab; background-color: #ffffff; }
+.sf17b5i {color: #2367ab; background-color: #3399ff; }
+.sf17b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf17b16i {color: #a19774; background-color: #f1e2ad; }
+.sf17b18i {color: #ab7257; background-color: #ffaa82; }
+.sf17b19i {color: #865749; background-color: #c8816c; }
+.sf20b2i {color: #ababd5; background-color: #ffffff; }
+.sf20b5i {color: #2367d5; background-color: #3399ff; }
+.sf20b14i {color: #ab6b96; background-color: #ffa0a0; }
+.sf20b16i {color: #a1979f; background-color: #f1e2ad; }
+.sf20b18i {color: #ab7282; background-color: #ffaa82; }
+.sf20b19i {color: #865772; background-color: #c8816c; }
+.sf21b2i {color: #abd5eb; background-color: #ffffff; }
+.sf21b5i {color: #2391eb; background-color: #3399ff; }
+.sf21b14i {color: #ab96aa; background-color: #ffa0a0; }
+.sf21b16i {color: #a1c2b3; background-color: #f1e2ad; }
+.sf21b18i {color: #ab9d96; background-color: #ffaa82; }
+.sf21b19i {color: #868187; background-color: #c8816c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">C:\Users\roshan.jp\Desktop\File_PDF_org.pdf</th>
+<th colspan="2" class="title" style="width:50.000000%">C:\Users\roshan.jp\Desktop\File_PDF_new.pdf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}, &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3} &nbsp; </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">MODERNA, INC. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">MODERNA, INC. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">CODE OF BUSINESS CONDUCT AND ETHICS</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">CODE OF BUSINESS CONDUCT AND ETHICS </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">I. Purpose and Scope </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">I. &nbsp;Purpose and Scope </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Board of Directors of Moderna, Inc. (together with its subsidiaries, the “Company”) has adopted </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Board of Directors of Moderna, Inc. (together with its subsidiaries, the “ Company”) has adopted &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">this Code of Business Conduct and Ethics (this “Code”) to aid the Company’s directors, </span><span style="color: #000000; background-color: #ff0080; ">officers and </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">this Code of Business Conduct and Ethics (this “ Code”) to aid the Company’s directors, &nbsp;</span><span class="sf17b18">executives,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">employees in making ethical and legal decisions when conducting the Company’s business and </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">officers and employees in making ethical and legal decisions when conducting the Company’s </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">performing their day-to-day duties. &nbsp;</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">business and performing their day-to-day duties. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company’s Board of Directors (the “Board”) or a committee of the Board is responsible for </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company’s Board of &nbsp;Directors (the “ Board”) or a committee of the Board is responsible for &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">administering the Code. The Board has delegated day-to-day responsibility for administering and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">administering the Code. The Board has delegated day-to-day responsibility for administering and </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">interpreting the Code to a Compliance Officer. &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">interpreting the Code to a Compliance Officer. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company expects its directors, officers and employees to exercise reasonable judgment when </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company expects its directors, officers and employees to exercise reasonable judgment when </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">c</span><span class="sf17b16">onduct</span><span style="color: #000000; background-color: #ff0080; ">ing </span><span style="color: #000000; background-color: #ff0080; ">the Company’s business. The Company encourages its directors, officers and employees </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">c</span><span class="sf17b16">arry</span><span style="color: #000000; background-color: #ff0080; ">ing </span><span class="sf17b18">out</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;the Company’s business. The Company encourages its directors, officers and employees &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">to refer to this Code frequently to ensure that they are acting within both the letter and spirit of this </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">to refer to this Code frequently to ensure that they are acting within both the letter and spirit of thi s </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Code</span><span style="color: #000000; background-color: #ff0080; ">. The Company also understands that this Code will not provide an answer to every problem </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Code </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Conduct</span><span style="color: #000000; background-color: #ff0080; ">. The Company also understands that this Code will not provide an answer to every </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">you may encounter or address every concern you may have about conducting the Company’s </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">problem you may encounter or address every concern you may have about conducting the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">business ethically and legally. In these situations, or if you otherwise have questions or concerns </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Company’s business ethically and legally. In these situations, or if you otherwise have questions or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">about this Code, the Company encourages you to speak with your supervisor </span><span class="sf17b18">(if</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">applicable)</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;or, if you </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">concerns about this Code, the Company encourages you to speak with your supervisor </span><span style="color: #000000; background-color: #ff0080; ">or, if you &nbsp;are </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">are </span><span class="sf17b16">uncomfortable</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b16">doing</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b16">that</span><span style="color: #000000; background-color: #ff0080; ">, with the Compliance Officer. </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">hesitant</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b16">to</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">do</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b16">so</span><span style="color: #000000; background-color: #ff0080; ">, with the Compliance Officer. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company’s directors, officers and employees generally have other legal and contractual </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company’s directors, officers and employees generally have other legal and &nbsp;contractual </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">obligations to the Company. This Code is not intended to reduce or limit the other obligations you </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">obligations to the Company. This Code is not intended to reduce or limit the other obligations you </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">may have to the Company. Instead, this Code </span><span class="sf17b16">should</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;be viewed as imposing the minimum standards </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">may have to the Company. Instead, this Code </span><span class="sf17b16">must</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;be viewed as imposing the minimum standards </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Company expects from its directors, officers and employees in the conduct of the Company’s </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Company expects from its directors, officers and employees in the conduct of the Company’s &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">business. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">business. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">II. Standards of Conduct </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">II. &nbsp;Standards of Conduct </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">A. Compliance with Laws, Rules and Regulations </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">A. Compliance with Laws, Rules and Regulations </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company requires that all employees, officers and directors comply with all laws, rules and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company requires that all employees, officers and directors comply with all laws, rules and </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regulations applicable to the Company wherever it does business. &nbsp;You are expected to use good </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regulations applicable to the Company wherever it does business. You are expected to use good </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">judgment and common sense in seeking to comply with all applicable laws, rules and regulations </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">judgment and common sense in seeking to comply with all applicable laws, rules and regulations </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and to ask for advice when you are uncertain about them. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and to ask for advice when you are uncertain about them. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">If you become aware of the violation of any law, rule or regulation by the Company, whether by its </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">If you become aware of the violation of any law, rule or regulation by the Company, whether by its </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">officers, employees, directors, or any third party doing business on behalf of the Company, it is your </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">officers, employees, directors, or any third party doing business on behalf of the Company, it is your </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">responsibility to promptly report the matter to your supervisor or to the Compliance Officer. &nbsp;While </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">responsibility to promptly report the matter to your supervisor or to the Compliance Officer. While </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">it is the Company’s desire to address matters internally, nothing in this Code should discourage you </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">it is the Company’s desire to address matters internally, nothing in this Code should discourage you &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">from reporting any illegal activity, including any violation of the securities laws, antitrust laws, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">from reporting any illegal activity, including any violation of the securities laws, antitrust laws, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">environmental laws or any other federal, state or foreign law, rule or regulation, to the appropriate </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">environmental laws or any other federal, state or foreign law, rule or regulation, to the appropriate </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regulatory authority. &nbsp;Employees, officers and directors shall not discharge, demote, suspend, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regulatory authority. Employees, officers and directors shall not discharge, demote, suspend, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">threaten, harass or in any other manner discriminate or retaliate against an employee because he or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">threaten, harass or in any other manner discriminate or retaliate against an employee because he or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">she reports any such violation, unless it is determined that the report was made with knowledge </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">she reports any such violation, unless it is determined that the report was made with knowledge </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">that it was false. &nbsp;This Code should not be construed to prohibit you from testifying, participating or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">that it was false. This Code should not be construed to prohibit you from testifying, participating or </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--1/</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--1/</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 2 </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span class="sf17b18">,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 2 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">otherwise assisting in any state or federal administrative, judicial or legislative proceeding or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">otherwise assisting in any state or federal administrative, judicial or legislative proceeding or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">investigation. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">investigation. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">B. Conflicts of Interest </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">B. Conflicts of Interest </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company recognizes and respects the right of its directors, officers and employees to engage in </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company recognizes and respects the right of its directors, officers and employees to engage in </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">outside activities that they may deem proper</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;and desirable, provided that these activities do not </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">outside activities that they may deem proper</span><span class="sf17b18">,profitable</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;and desirable, provided that these </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">impair or interfere with the performance of their duties to the Company or their ability to act in the </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">activities do not impair or interfere with the performance of their duties to the Company or their </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Company’s best interests. In most, if not all, cases this will mean that our directors, officers and </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">ability to act in the Company’s best interests. In most, if not all, cases this will mean that our </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">employees must avoid situations that present a potential or actual conflict between their personal </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">directors, officers and employees must avoid situations that present a potential or actual conflict </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">interests and the Company’s interests. </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">between their personal interests and the Company’s interests. &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">A “conflict of interest” occurs when a director’s, officer’s or employee’s personal interest interferes </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">A “conflict of interest” occurs when a director’s, officer’s or employee’s personal interest interferes &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">with the Company’s interests. Conflicts of interest can arise in many situations. For example, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">with the Company’s interests. Conflicts of interest can arise in many situations. For example, &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">conflicts of interest can arise when a director, officer or employee takes an action or has an outside </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">conflicts of interest can arise when a director, officer or employee takes an action or has an outside </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">interest, responsibility or obligation that can make it difficult for him or her to perform the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">interest, responsibility or obligation that can make it difficult for him or her to perform the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">responsibilities of his or her position objectively or effectively in the Company’s best interests. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">responsibilities of his or her position objectively or effectively in the Company’s best interests. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Conflicts of interest can also occur when a director, officer or employee or his or her immediate </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Conflicts of interest can also occur when a director, officer or employee or his or her immediate </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">family member receives some personal benefit (whether improper or not) as a result of the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">family member receives some personal benefit (whether improper or not) as a result of the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">director’s, officer’s or employee’s position with the Company. Each individual’s situation is different </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">director’s, officer’s or employee’s position with the Company. Each individual’s situation is different &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and in evaluating his or her own situation, a director, officer or employee will have to consider many </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and in evaluating his or her own situation, a director, officer or employee will have to consider many </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">factors. &nbsp;</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">factors. </span><span class="sf17b18">Hence</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">one</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">size</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">fits</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">all</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">solution</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">cannot</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">be</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">applied</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">at</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">all</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">instances</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Any material transaction, responsibility, obligation, or relationship that reasonably could be </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Any material transaction, responsibility, obligation, or relationship that reasonably could be </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">expected to give rise to a conflict of interest should be reported promptly to the Compliance Officer, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">expected to give rise to a conflict of interest should be reported promptly to the Compliance Officer, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">who may notify the Board or a committee of the Board as he or she deems appropriate. Actual or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">who may notify the Board or a committee of the Board as he or she deems appropriate. Actual or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">potential conflicts of interest involving a director or executive officer other than the Compliance </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">potential conflicts of interest involving a director or executive officer other than the Compliance </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Officer should be disclosed directly to the Compliance Officer. Actual or potential conflicts of </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Officer should be disclosed directly to the Compliance Officer. Actual or potential conflicts of </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">interest involving the Compliance Officer should be disclosed directly to the Chief Executive Officer. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">interest involving the Compliance Officer should be disclosed directly to the Chief Executive Officer. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">C. Insider Trading </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">C. Insider Trading </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors who have material non-public information about the Company or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors who have material non-public information about the Company or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">other companies, including our suppliers and customers, as a result of their relationship with the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">other companies, including our suppliers and customers, as a result of their relationship with the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company are prohibited by law and Company policy from trading in securities of the Company or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company are prohibited by law and Company policy from trading in securities of the Company or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">such other companies, as well as from communicating such information to others who might trade </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">such other companies, as well as from communicating such information to others who might trade </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">on the basis of that information. &nbsp;To help ensure that you do not engage in prohibited insider </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">on the basis of that information. To help ensure that you do not engage in prohibited insider </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">trading and avoid even the appearance of an improper transaction, the Company has adopted an </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">trading and avoid even the appearance of an improper transaction, the Company has adopted an </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Insider Trading Policy, which is distributed to employees and is also available from the Legal </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Insider Trading Policy, which is distributed to employees and is also available from the Legal </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Department or on the Company’s Intranet. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Department or on the Company’s Intranet. &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">If</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">you</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">are</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">uncertain</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">about</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">constraints</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">on</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">your</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">purchase</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">sale</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">any</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Company</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">securities</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">securities</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">any</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">other</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">company</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">that</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">you</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">are</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">familiar</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">by</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">virtue</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">your</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">relationship</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">Company,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">you</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">should</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">consult</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">General</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Counsel</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">before</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">making</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">any</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">such</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">purchase</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">sale.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">D. Confidentiality </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">D. Confidentiality </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors must maintain the confidentiality of confidential information </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors must maintain the confidentiality of confidential information </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">entrusted to them by the Company or other companies, including our suppliers and customers, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">entrusted to them by the Company or other companies, including our suppliers and customers, </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d23" href="#d23">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--2/</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--2/</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d24" href="#d24">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 3 </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span class="sf17b18">,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 3 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">except when disclosure is authorized by a supervisor or legally mandated. &nbsp;Unauthorized disclosure </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">except when disclosure is authorized by a supervisor or legally mandated. Unauthorized disclosure </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">of any confidential information is prohibited. &nbsp;Additionally, employees should take appropriate </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">of any confidential information is prohibited. Additionally, employees should take appropriate </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">precautions to ensure that confidential or sensitive business information, whether it is proprietary </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">precautions to ensure that confidential or sensitive business information, whether it is proprietary </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">to the Company or another company, is not communicated within the Company except to </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">to the Company or another company, is not communicated within the Company except to </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">employees who have a need to know such information to perform their responsibilities for the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">employees who have a need to know such information to perform their responsibilities for the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d25" href="#d25">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Third parties may ask you for information concerning the Company. &nbsp;Subject to the exceptions noted </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Third parties may ask you for information concerning the Company. Subject to the exceptions noted </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">in the preceding paragraph, employees, officers and directors (other than the Company’s authorized </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">in the preceding paragraph, employees, officers and directors (other than the Company’s authorized &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">spokespersons) must not discuss internal Company matters with, or disseminate internal Company </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">spokespersons) must not discuss internal Company matters with, or disseminate internal Company </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">information to, anyone outside the Company, except as required in the performance of their </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">information to, anyone outside the Company, except as required in the performance of their </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company duties and, if appropriate, after a confidentiality agreement is in place. &nbsp;This prohibition </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company duties and, if appropriate, after a confidentiality agreement is in place. This prohibition </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">applies particularly to inquiries concerning the Company from the media, market professionals (such </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">applies particularly to inquiries concerning the Company from the media, market professionals (such </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">as securities analysts, institutional investors, investment advisers, brokers and dealers) and security </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">as securities analysts, institutional investors, investment advisers, brokers and dealers) and security </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">holders. &nbsp;All responses to inquiries on behalf of the Company must be made only by the Company’s </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">holders. All responses to inquiries on behalf of the Company must be made only by the Company’s &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">authorized spokespersons. &nbsp;If you receive any inquiries of this nature, you must decline to comment </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">authorized spokespersons. If you receive any inquiries of this nature, you must decline to comment </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and refer the inquirer to your supervisor or one of the Company’s authorized spokespersons. &nbsp;The </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and refer the inquirer to your supervisor or one of the Company’s authorized spokespersons. &nbsp;The </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s policies with respect to public disclosure of internal matters are described more fully in </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s policies with respect to public disclosure of internal matters are described more fully in &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Company’s Corporate Communications Policies and Procedures, which are available on the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Company’s Corporate Communications Policies and Procedures, which are ava ilable on the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s Intranet. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s &nbsp;Intranet. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d26" href="#d26">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">You also must abide by any lawful obligations that you have to your former employer. &nbsp;These </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">You also must abide by any lawful obligations that you have to your former employer. These </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">obligations may include restrictions on the use and disclosure of confidential information, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">obligations may include restrictions on the use and disclosure of confidential information, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">restrictions on the solicitation of former colleagues to work at the Company and non-competition </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">restrictions on the solicitation of former colleagues to work at the Company and non-competition </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">obligations. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">obligations. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d27" href="#d27">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">E. Honest and Ethical Conduct and Fair Dealing </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">E. Honest and Ethical Conduct and Fair Dealing </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d28" href="#d28">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors should endeavor to deal honestly, ethically and fairly with the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors should endeavor to deal honestly, ethically and fairly with the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s suppliers, customers, competitors and employees. &nbsp;Statements regarding the Company’s </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s suppliers, customers, &nbsp;competitors and employees. Statements regarding the Company’s &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">products and services must not be untrue, misleading, deceptive or fraudulent. &nbsp;You must not take </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">products and services must not be untrue, misleading, deceptive or fraudulent. You must not take </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">unfair advantage of anyone through manipulation, concealment, abuse of privileged information, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">unfair advantage of anyone through manipulation, concealment, abuse of privileged information, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">misrepresentation of material facts or any other unfair-dealing practice. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">misrepresentation of material facts or any other unfair-dealing practice. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d29" href="#d29">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">F. Protection and Proper Use of Corporate Assets </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">F. Protection and Proper Use of Corporate Assets </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d30" href="#d30">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors should seek to protect the Company’s assets. &nbsp;Theft, carelessness </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors should seek to protect the Company’s assets. &nbsp;Theft, carelessness </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and waste have a direct impact on the Company’s financial performance. &nbsp;Employees, officers and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and waste have a direct impact on the Company’s financial performance. &nbsp;Employees, officers and </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">directors must use the Company’s assets and services solely for legitimate business purposes of the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">directors must use the Company’s assets and services solely for legitimate business purposes of the &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company and not for any personal benefit or the personal benefit of anyone else. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company and not for any personal benefit or the personal benefit of anyone else. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d31" href="#d31">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">G. Corporate Opportunities </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">G. Corporate Opportunities </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d32" href="#d32">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Directors, officers and employees owe a duty to the Company to advance its legitimate business </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Directors, officers and employees owe a duty to the Company to advance its legitimate business </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">interests when the opportunity to do so arises. Each employee, officer and director is prohibited </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">interests when the opportunity to do so arises. Each employee, officer and director is prohibited </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">from: &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">from: </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d33" href="#d33">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">diverting</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">himself</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">herself</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">others</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">any</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">opportunities</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">that</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">are</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">discovered</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">through</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">use</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Company’s</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">property</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">information</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">as</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">result</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">his</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">her</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">--3/8--</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">{00031191.3}</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; </span><span class="sf17b18">4</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">position</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Company</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">unless</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">that</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">opportunity</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">has</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">first</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">been</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">presented</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">to,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">rejected</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">by,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Company;</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">using</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Company’s</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">property</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">information</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">his</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">her</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">position</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">for</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">improper</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">personal</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">gain;</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">competing</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Company.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">H. Political Contributions/Gifts </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">H. Political Contributions/Gifts </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d34" href="#d34">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Business contributions to political campaigns are strictly regulated by federal, state, provincial and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Business contributions to political campaigns are strictly regulated by federal, state, provincial and </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">local law in the U.S. and many other jurisdictions. Accordingly, all political contributions proposed to </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">local law in the U.S. and many other jurisdictions. Accordingly, all political contributions proposed to </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d35" href="#d35">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--3/9--</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}, &nbsp;4 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">be made with the Company’s funds must be coordinated through and approved by the Compliance </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">be made with the Company’s funds must be coordinated through and &nbsp;approved by the Compliance </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Officer and the Senior Vice President, Government Affairs. &nbsp;Directors, officers and employees may </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Officer and the Senior Vice President, Government Affairs. Directors, officers and employees may </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">not, without the approval of the Compliance Officer and the Senior Vice President, Government </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">not, without the approval of the Compliance Officer and the Senior Vice President, Government </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Affairs, use any Company funds for political contributions of any kind to any political candidate or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Affairs, use any Company funds for political contributions of any kind to any political candidate or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">holder of any national, state or local government office. &nbsp;Directors, officers and employees may </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">holder of any national, state or local government office. Directors, officers and employees may </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">make personal contributions, but should not represent that they are making contributions on the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">make personal contributions, but should not represent that they are making contributions on the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s behalf. &nbsp;Specific questions should be directed to the Compliance Officer. &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s &nbsp;behalf. Specific questions should be directed to the Compliance Officer. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d36" href="#d36">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">I. Gifts and Entertainment </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">I. Gifts and Entertainment </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d37" href="#d37">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company strictly prohibits the giving or receiving of entertainment, such as concert tickets and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company strictly prohibits the giving or receiving of entertainment, such as concert tickets and </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">sporting events, in all cases, regardless of the value of such entertainment, the type of </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">sporting events, in all cases, regardless of the value of such entertainment, the type of </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">entertainment, and the identity of the recipient or donor. &nbsp;In general, employees must be careful to </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">entertainment, and the identity of the recipient or donor. In general, employees must be careful to </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">avoid even the appearance of impropriety in giving or receiving gifts and meals. &nbsp;Gifts offered, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">avoid even the appearance of impropriety in giving or receiving gifts and meals. Gifts offered, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">provided or accepted in connection with an employee’s service to the Company must be of nominal </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">provided or accepted in connection with an employee’s service to the Company must be of nominal &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">value, and meals must be customary, reasonable, infrequent, not excessive or lavish in nature, and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">value, and meals must be customary, reasonable, infrequent, not excessive or lavish in nature, and </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">appropriate for business purposes. &nbsp;Gifts and meals must not be susceptible of being construed as a </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">appropriate for business purposes. Gifts and meals must not be susceptible of being construed as a </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d38" href="#d38">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">bribe or kickback, or in violation of any laws. &nbsp;This principle applies to our transactions </span><span class="sf17b16">everywhere</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">bribe or kickback, or in violation of any laws. This principle applies to our transactions </span><span class="sf17b16">at</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b16">all</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b16">places</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">in</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b16">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b16">world</span><span style="color: #000000; background-color: #ff0080; ">, even if it conflicts with local custom. &nbsp;Under some statues, such as the U.S. Foreign </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">globally</span><span style="color: #000000; background-color: #ff0080; ">, even if it conflicts with local custom. Under some statues, such as the U.S. Foreign Corrupt </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Corrupt Practices Act, giving anything of value to a government official to obtain or retain business </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Practices Act, giving anything of value to a government official to obtain or retain business or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">or favorable treatment is a criminal act subject to prosecution and conviction. &nbsp;For additional </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">favorable treatment is a criminal act subject to prosecution and conviction. For additional </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">information, please see the Company’s Foreign Corrupt Practices Act and Anti-Corruption Policy and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">information, please see the Company’s Foreign Corrupt Practices Act and Anti -Corruption Policy and </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">its Gifts, Meals and Entertainment Policy. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">its Gifts, Meals and Entertainment Policy. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d39" href="#d39">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">J. Bribes, Kickbacks and Other Improper Payments </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">J. Bribes, Kickbacks and Other Improper Payments </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d40" href="#d40">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company does not permit or condone bribes, kickbacks or other improper payments, transfers </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company does not permit or condone bribes, kickbacks or other improper payments, transfers </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">or receipts. No director, officer or employee should offer, give, solicit or receive any money or other </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">or receipts. No director, officer or employee should offer, give, solicit or receive any money or other </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">item of value for the purpose of obtaining, retaining or directing business or bestowing or receiving </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">item of value for the purpose of obtaining, retaining or directing business or bestowing or receiving </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">any kind of favored treatment. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">any kind of favored treatment. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d41" href="#d41">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">K. International Trade Controls </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">K. International Trade Controls </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d42" href="#d42">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Many countries regulate international trade transactions, such as imports, exports and international </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Many countries regulate international trade transactions, such as imports, exports and international </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">financial transactions and prohibit boycotts against countries or firms that may be “blacklisted” by </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">financial transactions and prohibit boycotts against countries or firms that may be “ blacklisted” by </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">certain groups or countries. The Company’s policy is to comply with these regulations and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">certain groups or countries. The Company’s policy is to comply with these regulations and &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">prohibitions even if compliance may result in the loss of some business opportunities. Employees </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">prohibitions even if compliance may result in the loss of some business opportunities. Employees </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d43" href="#d43">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--4/</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--4/</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d44" href="#d44">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 5 </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span class="sf17b18">,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 5 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">should learn and understand the extent to which international trade controls apply to transactions </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">should learn and understand the extent to which international trade controls apply to transactions </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">conducted by the Company. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">conducted by the Company. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d45" href="#d45">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">L. Accuracy of Records &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">L. Accuracy of Records </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d46" href="#d46">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors must honestly and accurately report all business transactions. &nbsp;You </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Employees, officers and directors must honestly and accurately report all business transactions. You </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">are responsible for the accuracy of your records and reports. &nbsp;Accurate information is essential to </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">are responsible for the accuracy of your records and reports. Accurate information is essential to </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Company’s ability to meet legal and regulatory obligations. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Company’s ability to &nbsp;meet legal and regulatory obligations. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d47" href="#d47">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">All Company books, records and accounts shall be maintained in accordance with all applicable </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">All Company books, records and accounts shall be maintained in accordance with all applicable </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regulations and standards and accurately reflect the true nature of the transactions they record. &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regulations and standards and accurately reflect the true nature of the transactions they record. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The financial statements of the Company shall conform to generally accepted accounting rules and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The financial statements of the Company shall conform to generally accepted accounting rules and </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Company’s accounting policies. &nbsp;No undisclosed or unrecorded account or fund shall be </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Company’s accounting policies. &nbsp;No undisclosed or unrecorded account or fund shall be </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">established for any purpose. &nbsp;No false or misleading entries shall be made in the Company’s books </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">established for any purpose. No false or misleading entries shall be made in the Company’s books </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">or records for any reason, and no disbursement of corporate funds or other corporate property shall </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">or records for any reason, and no disbursement of corporate funds or other corporate property shall </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">be made without adequate supporting documentation. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">be made without adequate supporting documentation. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d48" href="#d48">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">M. Quality of Public Disclosures </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">M. Quality of Public Disclosures </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d49" href="#d49">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">It is the policy of the Company to provide full, fair, accurate, timely and understandable disclosure in </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">It is the policy of the Company to provide full, fair, accurate, timely and understandable disclosure in </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">reports and documents filed with, or submitted to, the Securities and Exchange Commission and in </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">reports and documents filed with, or submitted to, the Securities and Exchange Commission and in </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">other public communications. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">other public communications. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d50" href="#d50">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">III. Compliance Procedures </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">III. &nbsp;Compliance Procedures </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d51" href="#d51">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">A. Communication of Code </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">A. Communication of Code </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d52" href="#d52">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">All current directors, officers and employees are being supplied a copy of the Code. Future directors, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">All current directors, officers and employees are being supplied a copy of the Code. Future directors, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">officers and employees will be supplied a copy of the Code when beginning service at the Company. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">officers and employees will be supplied a copy of the Code when beginning service at the Company. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">All directors, officers and employees will be expected to review and sign an acknowledgment </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">All directors, officers and employees will be expected to review and sign an acknowledgment </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regarding the Code on a periodic basis. Updates of the Code, when adopted, will be promptly </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regarding the Code on a periodic basis. Updates of the Code, when adopted, will be promptly </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">supplied to directors, officers and employees. Directors, officers and employees also can obtain a </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">supplied to directors, officers and employees. Directors, officers and employees also can obtain a </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">copy of the Code by requesting one from the human resources department or by accessing the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">copy of the Code by requesting one from the human resources department or by accessing the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s website at www.modernatx.com. &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company’s website at www.modernatx.com. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d53" href="#d53">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">B. Monitoring Compliance and Disciplinary Action </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">B. Monitoring Compliance and Disciplinary Action </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d54" href="#d54">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company’s management, under the supervision of its Board or a committee of the Board or, in </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company’s management, under the supervision of its Board or a committee of the Board or, in &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the case of accounting, internal accounting controls, auditing or securities law matters, the Audit </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the case of accounting, internal accounting controls, auditing or securities law matters, the Audit </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Committee, shall take reasonable steps to (i) monitor compliance with the Code, and (ii) when </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Committee, shall take reasonable steps to (i) monitor compliance with the Code, and (ii) when </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">appropriate, impose and enforce appropriate disciplinary measures for violations of the Code. &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">appropriate, impose and enforce appropriate disciplinary measures for violations of the Code. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d55" href="#d55">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Disciplinary measures for violations of the Code will be determined in the Company’s sole discretion </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Disciplinary measures for violations of the Code will be determined in the Company’s sole discretion &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and may include, but are not limited to, counseling, oral or written reprimands, warnings, probation </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and may include, but are not limited to, counseling, oral or written reprimands, warnings, probation </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">or suspension with or without pay, demotions, reductions in salary, termination of employment or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">or suspension with or without pay, demotions, reductions in salary, termination of employment or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">service, and restitution. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">service, and restitution. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d56" href="#d56">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--5/</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--5/</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d57" href="#d57">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 6 </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span class="sf17b18">,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 6 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company’s management shall periodically report to the Board or a committee of the Board on </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company’s management shall periodically report to the Board or a committee of the Board on &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">these compliance efforts including, without limitation, alleged violations of the Code and the actions </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">these compliance efforts including, without limitation, alleged violations of the Code and the actions </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">taken with respect to violations. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">taken with respect to violations. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d58" href="#d58">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">C. Communication Channels </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">C. Communication Channels </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d59" href="#d59">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Be Proactive. Every employee is encouraged to act proactively by asking questions, seeking guidance </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Be Proactive. Every employee is encouraged to act proactively by asking questions, seeking guidance </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and reporting suspected violations of the Code and other policies and procedures of the Company, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and reporting suspected violations of the Code and other policies and procedures of the Company, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">as well as any violation or suspected violation of law, rule or regulation resulting from the conduct </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">as well as any violation or suspected violation of law, rule or regulation resulting from the conduct </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">of the Company’s business or occurring on the Company’s property. If an employee believes that </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">of the Company’s business or occurring on the Company’s property. &nbsp;If an employee believes that </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">actions have taken place, may be taking place, or may be about to take place that violate or would </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">actions have taken place, may be taking place, or may be about to take place that violate or would </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">violate the Code or any law, rule or regulation applicable to the Company, he or she is obligated to </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">violate the Code or any law, rule or regulation applicable to the Company, he or she is obligated to </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">bring the matter to the attention of the Company. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">bring the matter to the attention of the Company. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d60" href="#d60">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Seeking Guidance. The best starting point for officers or employees seeking advice on ethics-related </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Seeking Guidance. The best starting point for officers or employees seeking advice on ethics-related </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">issues or wishing to report potential violations of the Code will usually be their supervisor. However, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">issues or wishing to report potential violations of the Code will usually be their supervisor. However, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">if the conduct in question involves an officer’s or employee’s supervisor, if the officer or employee </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">if the conduct in question involves an officer’s or employee’s supervisor, if the officer or employee &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">has reported the conduct in question to the supervisor and does not believe that the supervisor has </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">has reported the conduct in question to the supervisor and does not believe that the supervisor has </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">dealt with it properly, or if the officer or employee does not feel comfortable discussing the matter </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">dealt with it properly, or if the officer or employee does not feel comfortable discussing the matter </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">with the supervisor, the officer or employee may raise the matter with the Compliance Officer. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">with the supervisor, the officer or employee may raise the matter with the Compliance Officer. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d61" href="#d61">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Communication Alternatives. Any officer or employee may communicate with the Compliance </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Communication Alternatives. Any officer or employee may communicate with the Compliance </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Officer, or report potential violations of the Code, by any of the following methods: &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Officer, or report potential violations of the Code, by any of the following methods: </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d62" href="#d62">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">By</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">e-mail</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">ComplianceOfficer@modernatx.com</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">(anonymity</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">cannot</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">be</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">maintained);</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">In</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">writing</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">(which</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">can</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">be</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">done</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">anonymously</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">as</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">set</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">forth</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">below</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">under</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">“Anonymity”)</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">by</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">mail</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Moderna,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Inc.,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Attention:</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Compliance</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Officer,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">200</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Technology</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Square,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">Cambridge,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Massachusetts</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">02139;</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Online</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">at</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">https://www.whistleblowerservices.com/M<wbr>oderna</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">(which</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">may</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">be</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">done</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">anonymously</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">as</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">set</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">forth</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">below</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">under</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">“Anonymity”);</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">By</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">calling</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Compliance</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Hotline</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">at</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">866-265-3948,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">which</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">is</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Compliance</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Hotline</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">that</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Company</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">has</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">established</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">for</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">receipt</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">questions</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">reports</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">potential</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">violations</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Code.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">This</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Compliance</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Hotline</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">is</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">managed</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">by</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">third-party</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">required</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">maintain</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">anonymity</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">caller</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">if</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">so</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">requested.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">See</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">below</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">under</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">“Anonymity”</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">for</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">more</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">information.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Reporting Accounting and Similar Concerns. Concerns or questions regarding potential violations of </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Reporting Accounting and Similar Concerns. Concerns or questions regarding potential violations of </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Code, a Company policy or procedure or laws, rules or regulations relating to accounting, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">the Code, a Company policy or procedure or laws, rules or regulations relating to accounting, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">internal accounting controls, or auditing or securities law matters will be directed to the Audit </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">internal accounting controls, or auditing or securities law matters will be directed to the Audit </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Committee of the Board (the “Audit Committee”) or a designee of the Audit Committee in </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Committee of the Board (the “ Audit Committee”) or a designee of the Audit Committee in &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">accordance with the procedures established by the Audit Committee for receiving, retaining and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">accordance with the procedures established by the Audit Committee for receiving, retaining and </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">treating complaints regarding accounting, internal accounting controls or auditing matters. Officers </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">treating complaints regarding accounting, internal accounting controls or auditing matters. Officers </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and employees can also communicate directly with the Audit Committee or its designee regarding </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">and employees can also communicate directly with the Audit Committee or its designee regarding </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">such matters by the following methods (which can be done anonymously as set forth below under </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">such matters by the following methods (which can be done anonymously as set forth below under </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">“Anonymity”): &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">“Anonymity”): </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d63" href="#d63">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--6/</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--6/</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d64" href="#d64">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 7 </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}</span><span class="sf17b18">,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; 7 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;In writing (which can be done anonymously as set forth below under “Anonymity”), by </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">?</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;In writing (which can be done anonymously as set forth below under “ Anonymity”), by &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">mail to Moderna, Inc., Attention: Chair of the Audit Committee, 200 Technology Square, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">mail to Moderna, Inc., Attention: Chair of the Audit Committee, 200 Technology Square, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Cambridge, Massachusetts 02139; &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Cambridge, Massachusetts 02139; </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d65" href="#d65">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;Online at https://www.whistleblowerservices.com/M<wbr>oderna (which may be done </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">?</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;Online at https://www.whistleblowerservices.com/M<wbr>oderna (which may be done </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">anonymously as set forth below under “Anonymity”); or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">anonymously as set forth below under “Anonymity”); or </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d66" href="#d66">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">•</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;by calling the Compliance Hotline and asking that the matter be forwarded to the </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">?</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;by calling the Compliance Hotline and asking that the matter be forwarded to the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Chairperson of the Audit Committee. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Chairperson of the Audit Committee. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Cooperation. Employees are expected to cooperate with the Company in any investigation of a </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Cooperation. Employees are expected to cooperate with the Company in any investigation of a </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">potential violation of the Code, any other Company policy or procedure, or any law, rule or </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">potential violation of the Code, any other Company policy or procedure, or any law, rule or </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regulation. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">regulation. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d67" href="#d67">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Misuse of Reporting Channels. Employees should not use these reporting channels in bad faith or in </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Misuse of Reporting Channels. Employees should not use these reporting channels in bad faith or in </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">a false or frivolous manner or to report grievances that do not involve the Code or other ethics-</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">a false or frivolous manner or to report grievances that do not involve the Code or other ethics- </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d68" href="#d68">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">related issues</span><span style="color: #000000; background-color: #ff0080; ">. </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">related issues </span><span class="sf17b18">which</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">could</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">result</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">in</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">grave</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">consequences</span><span style="color: #000000; background-color: #ff0080; ">. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Director Communications. In addition to the foregoing methods, a director also can communicate </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Director Communications. In addition to the foregoing methods, a director also can communicate </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">concerns or seek advice with respect to this Code by contacting the Board through its Chair or the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">concerns or seek advice with respect to this Code by contacting the Board through its Chair or the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Audit Committee. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Audit Committee. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d69" href="#d69">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">D. Anonymity </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">D. Anonymity </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d70" href="#d70">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">The Company prefers that officers</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span style="color: #000000; background-color: #ff0080; ">and employees, when reporting suspected violations of the Code, </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">identify themselves to facilitate the Company’s ability to take steps to address the suspected </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">The Company prefers that officers</span><span class="sf17b18">,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">managers</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;and employees, when reporting suspected violations </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">violation, including conducting an investigation. However, the Company also recognizes that some </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">of the Code, identify themselves to facilitate the Company’s ability to take steps to address the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">people may feel more comfortable reporting a suspected violation anonymously. </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">suspected violation, including conducting an investigation. However, the Company also recognizes </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">that some people may feel more comfortable reporting a suspected violation anonymously. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">Employees</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">can</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">exercise</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">anonymity</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">for</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">reporting</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">sensitive</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">issues</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">within</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">reasonable</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">ambit.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">Subsequent</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">investigations</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">anonymous</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">complaint</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">may</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">require</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">identity</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">be</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">revealed</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">as</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">per</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">law</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">land.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">An officer or employee who wishes to remain anonymous may do so, and the Company will use </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">An officer or employee who wishes to remain anonymous may do so, and the Company will use </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">reasonable efforts to protect confidentiality. If a report is made anonymously, however, the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">reasonable efforts to protect confidentiality. If a report is made anonymously, however, the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company may not have sufficient information to investigate or evaluate the allegations. Accordingly, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Company may not have sufficient information to investigate or evaluate the allegations. Accordingly, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">persons who report suspected violations anonymously should provide as much detail as they can to </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">persons who report suspected violations anonymously should provide as much detail as they can to </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">permit the Company to evaluate the allegation and, if it deems appropriate, conduct an </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">permit the Company to evaluate the allegation and, if it deems appropriate, conduct an </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">investigation. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">investigation. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d71" href="#d71">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">E. No Retaliation </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">E. No Retaliation </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d72" href="#d72">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company forbids any retaliation against an officer or employee who, acting in good faith on the </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">The Company forbids any retaliation against an officer or employee who, acting in good faith on the </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">basis of a reasonable belief, reports suspected misconduct. Specifically, the Company will not </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">basis of a reasonable belief, reports suspected misconduct. Specifically, the Company will not </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">discharge, demote, suspend, threaten, harass or in any other manner discriminate against, such an </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">discharge, demote, suspend, threaten, harass or in any other manner discriminate against, such an </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">officer or employee. Anyone who participates in any such conduct is subject to disciplinary action, </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">officer or employee. Anyone who participates in any such conduct is subject to disciplinary action, </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">including termination. </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">including termination. </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d73" href="#d73">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">IV. Waivers and Amendments </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">IV. &nbsp;Waivers and Amendments </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d74" href="#d74">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ffffff; "><code><span style="color: #000000; background-color: #ffffff; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">No waiver of any provisions of the Code for the benefit of a director or an executive officer (which </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">No waiver of any provisions of the Code for the benefit of a director or an executive officer (which </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">includes, without limitation, the Company’s principal executive, financial and accounting officers) </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">includes, without limitation, the Company’s principal executive, financial and accounting officers) &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d75" href="#d75">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--7/9--</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3}, &nbsp;8 &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">shall be effective unless (i) approved by the Board or, if permitted, the Audit Committee, and (ii) if </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">shall be effective unless (i) approved by the Board or, if permitted, the Audit Committee, and (ii) if </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">required, the waiver is promptly disclosed to the Company’s securityholders in accordance with </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">required, the waiver is promptly disclosed to the Company’s securityholders in accordance with </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d76" href="#d76">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--</span><span class="sf17b16">7</span><span style="color: #000000; background-color: #ff0080; ">/</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #ff0080; ">/</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">{00031191.3},</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; </span><span class="sf17b18">9</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">applicable</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Indian</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">securities</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">laws</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">rules</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">regulations</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">exchange</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">system</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">on</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">which</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Company’s</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; </span><span class="sf17b18">shares</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">are</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">traded</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">quoted,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">as</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">case</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">may</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">be.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">Any</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">waivers/concessions</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Code</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">for</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">other</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">employees</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">may</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">be</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">made</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">by</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Compliance</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Officer,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Board</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">or,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">if</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">permitted,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Audit</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Committee.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d77" href="#d77">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">{00031191.3} &nbsp;8 </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">applicable U.S. securities laws and the rules and regulations of the exchange or system on which the </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Company’s shares are traded or quoted, as the case may be. &nbsp;</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Any waivers of the Code for other employees may be made by the Compliance Officer, the Board or, </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">if permitted, the Audit Committee. &nbsp;</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">All amendments to the Code must be approved by the Board and, if required, must be promptly </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">All amendments to the Code must be approved by the Board and, if required, must be promptly </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">disclosed to the Company’s securityholders in accordance with United States securities laws and </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">disclosed to the Company’s securityholders in accordance with United States securities laws and &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d78" href="#d78">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">NASDAQ</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;rules and regulations. </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span class="sf17b16">SENSEX</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;rules and regulations. </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d79" href="#d79">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Adopted September 29, 20</span><span class="sf17b16">18</span><span style="color: #000000; background-color: #ff0080; ">, subject to effectiveness of the Company’s Registration Statement on </span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Adopted September 29, 20</span><span class="sf17b16">20</span><span style="color: #000000; background-color: #ff0080; ">, subject to effectiveness of the Company’s Registration Statement on &nbsp;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Form S-1 for its initial public offering; amended </span><span class="sf17b16">Decem</span><span style="color: #000000; background-color: #ff0080; ">ber 19, </span><span class="sf17b16">2019.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">Last</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">updated</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">on</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">December</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">8,</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span><span class="sf17b18">2020.</span><span style="color: #000000; background-color: #ff0080; ">&nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">Form S-1 for its initial public offering; amended </span><span class="sf17b16">Octo</span><span style="color: #000000; background-color: #ff0080; ">ber 19, </span><span class="sf17b16">2021</span><span style="color: #000000; background-color: #ff0080; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Basecamp Integrity, Quality, and Respect </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Basecamp Integrity, Quality, and Respect </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d80" href="#d80">.</a></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #ff0080; ">/</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #ff0080; "><code><span style="color: #000000; background-color: #ff0080; ">--</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #ff0080; ">/</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #ff0080; ">--</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
